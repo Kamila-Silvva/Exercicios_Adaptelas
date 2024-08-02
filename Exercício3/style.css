@@ -6,11 +6,11 @@
 }
 
 body {
-    background-color: #CEDEBD; 
+    background-color: #FFF3DA; 
 }
 
 header {
-    padding: 20px;
+    padding: 30px;
     background-color: #435334;
     width: 100%;
     display: flex; 
@@ -18,35 +18,32 @@ header {
     align-items: center;
 }
 
-.container {
-  flex-direction: column-reverse;
+.topo-logo, img {
+    margin: 5px;
 }
-
-nav {
-    margin: 0;
-}
-
 nav ul {
     list-style: none; 
-    display: flex; 
-    padding: 0;
+    display: flex;
+    padding: 30px;
+    justify-content: flex-end;
 }
 
 nav ul li {
     margin-right: 10px; 
 }
 
-nav a {
+nav a{
     font-size: 20px;
     text-decoration: none;
-    color: #435334;
+    color: #FFF3DA;
     padding: 20px;
 }
 
-.texto-conteudo h1, .texto-conteudo p {
-    text-align: center;
+.texto-conteudo h1 .texto-conteudo p {
+    text-align: justify;
     padding: 5px;
     margin: 10px;
+    justify-content: flex-start;
 }
 
 .texto-conteudo p, .texto-conteudo h1 {
@@ -78,3 +75,14 @@ nav a {
   text-align: center;
   color: #435334;
 }
+
+.texto-conteudo, img {
+    justify-content: flex-end;
+    justify-items: right;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
